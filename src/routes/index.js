@@ -52,6 +52,7 @@ import Officer from "pages/About/Officer"
 import WaterBowser from "pages/Services/WaterBowser"
 import WaterSupply from "pages/Services/WaterSupply"
 import WaterSupplyApplication from "pages/Services/Applications/WaterSupplyApplication"
+import BookingHallApplication from "pages/Services/Applications/BookingHallApplication"
 import TeacherManagement from "../pages/Services/TeacherManagement";
 import TreeCut from "../pages/Services/TreeCut";
 import PropertyRegistration from "../pages/Services/PropertyRegistration";
@@ -77,6 +78,8 @@ import ApprovalLandDivision from "../pages/Services/ApprovalLandDivision";
 import ApprovalAdvertisement from "../pages/Services/ApprovalAdvertisement";
 import ApprovalRoadExcavation from "../pages/Services/ApprovalRoadExcavation";
 import GetInTouch from "../pages/Contacts/GetInTouch";
+
+
 
 const authProtectedRoutes  = [
   { path: "/logout", component: Logout },
@@ -141,6 +144,7 @@ const publicRoutes = [
   { path: "/garbage-collect", component: GarbageCollect },
   { path: "/street-lamp", component: StreetLamp },
   { path: "/information-access", component: InformationAccess },
+  { path: "/booking-hall-application", component: BookingHallApplication },
 
 
   { path: "/download-application", component: Application },

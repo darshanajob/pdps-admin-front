@@ -34,7 +34,7 @@ const RentHalls = props => {
               <Card>
                 <CardBody className="service-heading">
                   <CardTitle className="h4 text-lg-center">
-                    {props.t("Event Halls / Town Halls / Community Halls for rent")}
+                    {props.t("Napana Auditorium Hall Booking")}
                   </CardTitle>
                 </CardBody>
                 <CardBody>
@@ -68,6 +68,65 @@ const RentHalls = props => {
                         </tr>
                         </tbody>
                       </Table>
+                      <Table className="table mb-0">
+                        <thead className="table-light">
+                        <tr>
+                          <th>{props.t("Napana Auditorium rental per day")}</th>
+                          <th>{props.t("Price")}</th>
+                          
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>
+                            {props.t("For weddings (with Furniture, Electricity and Water)")}
+                            </td>
+                            <td>Rs.40000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("Deposit for weddings")}
+                            </td>
+                            <td>Rs.20000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("For external institutions and other events")}
+                            </td>
+                            <td>Rs.25000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("Deposit amount for external institutions and other events")}
+                            </td>
+                            <td>Rs.15000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("For preschools")}
+                            </td>
+                            <td>Rs.15000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("Deposit amount for preschools")}
+                            </td>
+                            <td>Rs. 5000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("For public sector meetings")}
+                            </td>
+                            <td>Rs.10000.00</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            {props.t("For political meetings")}
+                            </td>
+                            <td>Rs.10000.00</td>
+                        </tr>
+                        </tbody>
+                      </Table>
                     </div>
                   </Card>
                   <div className="d-flex flex-wrap gap-2 buttons-services-page">
@@ -78,7 +137,7 @@ const RentHalls = props => {
                       <i className="fas fa-download font-size-16 align-middle me-2"></i>{" "}
                       {props.t("Download Application")}
                     </button>
-                    <Link to="/water-supply-application" >
+                    <Link to="/booking-hall-application" >
                       <button
                         type="button"
                         className="btn btn-primary "
@@ -95,6 +154,7 @@ const RentHalls = props => {
         </Container>
       </div>
     </React.Fragment>
+    
   );
 };
 

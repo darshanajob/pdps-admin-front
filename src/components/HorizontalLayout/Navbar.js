@@ -153,8 +153,10 @@ const Navbar = props => {
                         }}
                       >
                         {props.t("Get Approvals")}{" "}
+                        
                         <div className="arrow-down"></div>
                       </Link>
+                      
                       <div className={classname("dropdown-menu", { show: aproval })}>
                         <Link to="/building-plan" className="dropdown-item">
                           {props.t("Approval of building plans")}
@@ -175,6 +177,7 @@ const Navbar = props => {
                         <Link to="/road-damage" className="dropdown-item">
                           {props.t("Requesting permission to damage roads")}
                         </Link>
+                        
                       </div>
                     </div>
 
@@ -233,6 +236,8 @@ const Navbar = props => {
                         {props.t("Taxes and rents")}{" "}
                         <div className="arrow-down"></div>
                       </Link>
+                      
+                      
                       <div className={classname("dropdown-menu", { show: tax })}>
                         <Link to="/tax-assessment" className="dropdown-item">
                           {props.t("Levy of assessment tax")}
